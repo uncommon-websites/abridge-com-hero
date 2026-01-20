@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abridge Hero Section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-orange': '#F04405',
+                        'brand-black': '#000000',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom utilities for specific shapes */
+        .arch-t {
+            border-top-left-radius: 9999px;
+            border-top-right-radius: 9999px;
+        }
+        .arch-tl {
+            border-top-left-radius: 100%;
+        }
+        .arch-tr {
+            border-top-right-radius: 100%;
+        }
+        /* For the angled line */
+        .angled-bar {
+            width: 15px;
+            height: 100px;
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+<body class="bg-white text-brand-black antialiased">
+
+    <!-- Top Banner -->
+    <div class="bg-black text-white text-[11px] md:text-xs font-bold py-2.5 text-center tracking-wide px-4">
+        <a href="#" class="inline-flex items-center hover:opacity-80 transition-opacity">
+            <span class="border border-white rounded-full px-2 py-0.5 mr-2 text-[10px]">NEWS</span>
+            ABRIDGE & AVAILITY COLLABORATION ANNOUNCEMENT <span class="ml-1">→</span>
+        </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="border-b border-transparent">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12 py-5 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <a href="#" class="text-3xl font-bold tracking-tight font-sans">ABRIDGE</a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center gap-8 text-sm font-semibold text-gray-800">
+                <div class="group relative cursor-pointer flex items-center gap-1">
+                    PLATFORM
+                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <div class="group relative cursor-pointer flex items-center gap-1">
+                    AI
+                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <div class="group relative cursor-pointer flex items-center gap-1">
+                    RESOURCES
+                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <div class="group relative cursor-pointer flex items-center gap-1">
+                    ABOUT
+                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+            </div>
+
+            <!-- Right Actions -->
+            <div class="hidden lg:flex items-center gap-6">
+                <a href="#" class="text-sm font-bold text-gray-900 hover:text-brand-orange transition-colors">LOGIN</a>
+                <a href="#" class="text-sm font-bold text-brand-orange border-2 border-brand-orange px-5 py-2.5 hover:bg-brand-orange hover:text-white transition-colors uppercase tracking-wide">
+                    Contact Us
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="lg:hidden">
+                <button class="text-gray-900 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="max-w-[1400px] mx-auto px-6 lg:px-12 py-12 lg:py-20">
+        <div class="grid lg:grid-cols-2 gap-12 items-start">
+            
+            <!-- Left Content -->
+            <div class="flex flex-col justify-center pt-4">
+                <h1 class="font-serif text-5xl md:text-[4.5rem] leading-[0.95] uppercase mb-8 text-brand-black">
+                    Intelligence at the<br>
+                    Point of<br>
+                    Conversation
+                </h1>
+                
+                <p class="text-lg md:text-[1.35rem] leading-relaxed text-gray-800 mb-10 max-w-xl font-light">
+                    Enterprise-grade AI for clinical conversations—trusted by the largest healthcare systems. Measurably improving outcomes for clinicians, nurses, and revenue cycle teams at scale.
+                </p>
+                
+                <div class="mb-16">
+                    <a href="#" class="bg-black text-white text-sm font-bold px-8 py-4 rounded-full tracking-wider hover:bg-gray-800 transition-colors inline-block">
+                        CONTACT US
+                    </a>
+                </div>
+
+                <!-- Award Badge -->
+                <div class="relative w-32 h-32 md:w-40 md:h-40">
+                    <!-- Simulating the badge with an image placeholder that looks similar -->
+                    <img src="https://placehold.co/160x160/333/white?text=BEST+IN\nKLAS\n2025" alt="Best in KLAS Award" class="rounded-full border-4 border-gray-600 p-1 object-cover w-full h-full transform -rotate-12 shadow-lg">
+                </div>
+            </div>
+
+            <!-- Right Content (Collage) -->
+            <div class="relative w-full h-[500px] md:h-[650px] hidden md:block">
+                
+                <!-- Top Image (Female Doctor) -->
+                <div class="absolute top-0 left-[28%] w-[26%] h-[38%] overflow-hidden arch-t z-10">
+                    <img src="https://placehold.co/300x400/e2e8f0/333?text=Doctor" alt="Doctor" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Angled Orange Shape (Top Right) -->
+                <!-- Diagonal Line -->
+                <div class="absolute top-[12%] right-[22%] w-4 h-24 bg-brand-orange transform -rotate-45 origin-bottom-left z-0"></div>
+                <!-- Connecting Square -->
+                <div class="absolute top-[38%] right-0 w-8 h-8 bg-brand-orange z-0"></div>
+
+                <!-- Left Orange Arc (Quarter Circle Stroke effect) -->
+                <!-- Using a solid div with a mask or just a thick border div -->
+                <div class="absolute top-[42%] left-[8%] w-[20%] h-[15%]">
+                    <div class="w-full h-full border-t-[35px] border-l-[35px] border-brand-orange rounded-tl-[100px]"></div>
+                </div>
+                <!-- Small square connector for arc -->
+                <div class="absolute top-[42%] left-[28%] w-[8%] h-[15%] bg-brand-orange"></div>
+
+
+                <!-- Right Orange Arch Structure -->
+                <!-- Large orange block -->
+                <div class="absolute top-[42%] right-[15%] w-[32%] h-[25%] bg-brand-orange z-0">
+                    <!-- White cutout to create arch -->
+                    <div class="absolute bottom-0 left-[15%] right-[15%] h-[70%] bg-white arch-t"></div>
+                </div>
+                
+                <!-- Middle/Bottom Left Image (Male Doctor) -->
+                <div class="absolute bottom-[18%] left-[14%] w-[26%] h-[36%] overflow-hidden arch-t z-10 shadow-lg">
+                    <img src="https://placehold.co/300x400/e2e8f0/333?text=Clinician" alt="Clinician" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Bottom Right Image (Phone) -->
+                <div class="absolute bottom-0 right-[15%] w-[26%] h-[36%] overflow-hidden arch-t z-10 shadow-lg">
+                    <img src="https://placehold.co/300x400/d1d5db/333?text=App" alt="App Interface" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Small Orange Square (Bottom Center) -->
+                <div class="absolute bottom-[18%] left-[40%] w-[7%] h-[7%] bg-brand-orange z-20"></div>
+
+                <!-- Small Orange Square (Far Right Edge) -->
+                <div class="absolute bottom-[33%] right-0 w-[7%] h-[7%] bg-brand-orange z-0"></div>
+
+            </div>
+            
+            <!-- Mobile Fallback for Image (Simplified) -->
+            <div class="md:hidden mt-8">
+                <div class="relative w-full aspect-square bg-gray-50 rounded-3xl overflow-hidden">
+                     <img src="https://placehold.co/600x600/e2e8f0/333?text=Abridge+Platform" alt="Platform" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
